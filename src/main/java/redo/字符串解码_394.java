@@ -1,3 +1,7 @@
+package redo;
+
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class 字符串解码_394 {
 
@@ -5,7 +9,7 @@ public class 字符串解码_394 {
 class Solution {
     public String decodeString(String s) {
         // 碰到【 入栈字母  碰到 】出栈字母并计算
-        Deque<String> cStack = new LinkedList<>();   // 存储的是[ 后  数字前的字符串  如  2[ab3[cd4[ef]]] 中的ab  cd  依次入栈  
+        Deque<String> cStack = new LinkedList<>();   // 存储的是[ 后  数字前的字符串  如  2[ab3[cd4[ef]]] 中的ab  cd  依次入栈
         Deque<Integer> nStack = new LinkedList<>();  // 存储的是[ 前的数字  如上例中的 2 3 4
         char[] arr = s.toCharArray();
         // 难点  数字可能不止一位数

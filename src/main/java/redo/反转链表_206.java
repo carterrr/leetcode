@@ -1,3 +1,5 @@
+package redo;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -9,8 +11,7 @@
  * }
  */
 
- public class 反转链表_206 {}
-class Solution {
+ public class 反转链表_206 {class Solution {
     public ListNode reverseList(ListNode head) {
         if(head == null) return null;
         ListNode fst = head, snd = head.next;
@@ -31,5 +32,15 @@ class Solution {
         head.next = null; // 避免原始头节点和第二个节点之间有双向指针
         return finalHead;
     }
-    
-}
+
+}}
+
+
+
+ class ListNode {
+     int val;
+     ListNode next;
+     ListNode() {}
+     ListNode(int val) { this.val = val; }
+     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ }
