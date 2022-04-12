@@ -1,17 +1,8 @@
+package redo;
 
-public class 旋转链表_61{}
+import redo.base.ListNode;
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
+public class 旋转链表_61{private class Solution_ {
     public ListNode rotateRight(ListNode head, int k) {
         if(head == null || k == 0) return head;
         int l = 1 ;
@@ -35,4 +26,15 @@ class Solution {
         tail.next = dummyHead;
         return newHead;
     }
-}
+}}
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */

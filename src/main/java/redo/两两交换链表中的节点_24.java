@@ -1,5 +1,7 @@
 package redo;
 
+import redo.base.ListNode;
+
 public class 两两交换链表中的节点_24 {
     class Solution {
         public ListNode swapPairs(ListNode head) {

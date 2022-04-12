@@ -1,15 +1,8 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
-public class Solution {
+package redo;
+
+import redo.base.ListNode;
+
+public class 相交链表_160 {class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode curA = headA, curB = headB;
         while(curA != curB) {
@@ -25,8 +18,9 @@ public class Solution {
             } else {
                 curB = curB.next;
             }
-            
+
         }
         return curA;
     }
+}
 }
