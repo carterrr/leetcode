@@ -1,3 +1,7 @@
+package redo;
+
+import redo.base.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,7 +17,7 @@
  *     }
  * }
  */
-class Solution {
+public class 找树左下角的值_513 {
     public int findBottomLeftValue(TreeNode root) {
         int[] res = new int[]{-1, 0};
         dfs(root, res, 0);

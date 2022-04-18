@@ -1,3 +1,7 @@
+package redo;
+
+import redo.base.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,7 +17,7 @@
  *     }
  * }
  */
-class Solution {
+public class 求根节点到叶子节点数字之和_129 {
     public int sumNumbers(TreeNode root) {
         return cursion(root, 0);
     }

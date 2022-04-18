@@ -1,3 +1,7 @@
+package redo;
+
+import redo.base.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,7 +17,8 @@
  *     }
  * }
  */
-class Solution {
+
+class 相同的树_100 {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p == null && q == null) return true; // 都为空
         else if( p == null || q == null) return false; // 一个空 一个不空
