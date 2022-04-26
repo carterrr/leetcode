@@ -1,3 +1,10 @@
+package redo.mistakescollection;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 class Solution {
 
     // 难点是边界问题理清  String#substring() 方法 endIndex参数可以是 length  比实际坐标大
