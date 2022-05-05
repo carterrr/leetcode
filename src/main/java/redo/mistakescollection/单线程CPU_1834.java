@@ -1,9 +1,16 @@
+package redo.mistakescollection;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 public class 单线程CPU_1834{
 
      public int[] getOrder(int[][] tasks) {
         int len = tasks.length;
         // 建堆 执行完获取数组中小于等于的入堆并重新poll执行
-        Queue<int[]> q = new PriorityQueue<>((a,b) -> {
+        Queue<int[]> q = new PriorityQueue<>((a, b) -> {
             if(a[1] == b[1]) return a[2] - b[2]; // 否则下标小的先出队
             return a[1] - b[1];                  // 执行时间小的先出队
         });

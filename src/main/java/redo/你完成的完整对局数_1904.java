@@ -1,3 +1,5 @@
+package redo;
+
 public class 你完成的完整对局数_1904{
     public int numberOfRounds(String loginTime, String logoutTime) {
         String[] login = loginTime.split(":");

@@ -1,4 +1,4 @@
-
+package redo.mistakescollection;
 
 
 public class  可能的二分法_889{
