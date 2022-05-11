@@ -1,7 +1,7 @@
-/* The isBadVersion API is defined in the parent class VersionControl.
+package redo;/* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */
 
-public class Solution extends VersionControl {
+public class 第一个错误的版本_278  {
     public int firstBadVersion(int n) {
         int l = 1, r = n;
         while(l < r) {
@@ -13,5 +13,9 @@ public class Solution extends VersionControl {
             }
         }
         return l;
+    }
+
+    private boolean isBadVersion(int mid) {
+        return false;
     }
 }

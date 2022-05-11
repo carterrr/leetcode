@@ -16,7 +16,7 @@ public class 翻转对_493 {
             int l = 0 , r = list.size() - 1;
             while(l < r) {
                 int mid = l + ((r - l) >> 1);
-                if (list.get(mid) >= nums[i] / 2.0) {  // 防止 Integer.MAX_VALUE * 2 溢出的同时 还要防止 整数相除 抹了零 因此改成小数除
+                if (list.get(mid) >= nums[i] / 2.0) {
                     r = mid;
                 } else {
                     l = mid + 1;
