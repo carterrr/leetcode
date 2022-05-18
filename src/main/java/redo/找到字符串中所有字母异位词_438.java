@@ -1,4 +1,9 @@
-class Solution {
+package redo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class 找到字符串中所有字母异位词_438 {
      public List<Integer> findAnagrams(String s, String p) {
         int sLen = s.length(),
                 window = p.length(),

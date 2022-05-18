@@ -1,11 +1,28 @@
 package redo.mistakescollection;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionService;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
 class Solution {
+
+    public static void main(String[] args) {
+        CompletableFuture c = new CompletableFuture();
+        c.orTimeout(1, TimeUnit.SECONDS);
+        try {
+            c.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+    }
 
     // 难点是边界问题理清  String#substring() 方法 endIndex参数可以是 length  比实际坐标大
     public List<Integer> findSubstring(String s, String[] words) {
