@@ -35,5 +35,6 @@ public class 二进制手表_401 {
     }
   }
 
-
+  public static void main(String[] args) {
+  }
 }
