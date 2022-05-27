@@ -1,4 +1,9 @@
-public class 地图分析_1162 {  // 同时从多个源头进行bfs  找这多个源头距离最远或最近的目标 
+package redo;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class 地图分析_1162 {  // 同时从多个源头进行bfs  找这多个源头距离最远或最近的目标
     final int[][] dxy = {{0,-1},{0,1},{-1,0},{1,0}};
     public int maxDistance(int[][] grid) {
         int row = grid.length, col = grid[0].length;

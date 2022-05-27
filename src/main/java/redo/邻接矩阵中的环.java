@@ -1,3 +1,5 @@
+package redo;
+
 import java.util.*;
 
 
@@ -11,7 +13,7 @@ import java.util.*;
 ]
 target = 3
 */
-class Solution {
+public class 邻接矩阵中的环 {
     
     public int solve(int[][] graph, int target) {
        // from target,find next until target by bfs
