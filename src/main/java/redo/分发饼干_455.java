@@ -1,4 +1,8 @@
-class Solution {
+package redo;
+
+import java.util.Arrays;
+
+public class 分发饼干_455 {
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);

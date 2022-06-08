@@ -1,4 +1,6 @@
-class Solution {
+package redo;
+
+class 骑士在棋盘上的概率_688 {
     int[][] moves = {{2,1},{2,-1},{-2,1},{-2,-1},{1,2},{1,-2},{-1,2},{-1,-2}};
     public double knightProbability(int n, int k, int row, int column) {
         double[][][] dp = new double[n][n][k + 1]; // 多一层  递推到k层

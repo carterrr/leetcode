@@ -1,4 +1,6 @@
-class Solution {
+package redo;
+
+class 目标和_494 {
     // 背包问题和能否为j dp[j] = dp[j] | dp[j - mum]  和为j个数 dp[j] = dp[j] + dp[j - num]
     public int findTargetSumWays(int[] nums, int target) {
         for(int i : nums) {

@@ -1,4 +1,6 @@
-class Solution { // https://leetcode.cn/problems/partition-equal-subset-sum/solution/by-flix-szk7/
+package redo;
+
+class 分割等和子集_416 { // https://leetcode.cn/problems/partition-equal-subset-sum/solution/by-flix-szk7/
     public boolean canPartition(int[] nums) {
         int target = 0;
         for(int num : nums) {

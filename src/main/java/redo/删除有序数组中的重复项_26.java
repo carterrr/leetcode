@@ -1,3 +1,5 @@
+package redo;
+
 public class 删除有序数组中的重复项_26 {
 
     public static void main(String[] args) {

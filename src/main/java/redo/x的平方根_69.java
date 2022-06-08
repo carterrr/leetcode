@@ -1,3 +1,5 @@
+package redo;
+
 public class x的平方根_69 {
     // 二分法求小于等于的最大整数
     public int mySqrt(int x) {

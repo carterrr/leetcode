@@ -1,4 +1,6 @@
-class Solution {
+package redo;
+
+class 零钱兑换_322{
     public int coinChange(int[] coins, int amount) {
         int len = coins.length;
         int[] dp = new int[amount + 1];
