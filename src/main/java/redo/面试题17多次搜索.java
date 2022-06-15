@@ -9,6 +9,8 @@ import java.util.List;
  * smalls = ["is","ppi","hi","sis","i","ssippi"]
  * 输出： [[1,4],[8],[],[3],[1,4,7,10],[5]]
  *
+ * tips : 这个其实就是elasticserach 的trie实现
+ *
  */
 public class 面试题17多次搜索 {
     public int[][] multiSearch(String big, String[] smalls) {

@@ -1,4 +1,9 @@
-class Solution {
+package redo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class 子集_78 {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         for(int i = (int)Math.pow(2, nums.length) - 1; i >=0; i--) {
