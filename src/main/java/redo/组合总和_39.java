@@ -1,4 +1,9 @@
-class Solution {
+package redo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class 组合总和_39 {
         List<List<Integer>> res = new ArrayList<>();
 List<Integer> tmp = new ArrayList();
     public List<List<Integer>> combinationSum(int[] candidates, int target) {

@@ -1,7 +1,12 @@
 package redo;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class 联通网络的操作次数_1319 {
   public static void main(String[] args) {
+    final boolean b = false ^ false;
+    System.out.println(b);
     联通网络的操作次数_1319 s = new 联通网络的操作次数_1319();
     s.makeConnected(5, new int[][]{{0,1},{0,2},{3,4},{2,3}}
         );
