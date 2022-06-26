@@ -38,6 +38,28 @@ public class 合并k个排序链表_23 {
     return dummyHead.next;
   }
 
+
+/*public ListNode mergeKLists(ListNode[] lists) {
+        Queue<ListNode> q = new PriorityQueue<>(Comparator.comparingInt(a -> a.val));
+        for(ListNode l : lists) {
+            if(l != null) {
+                q.offer(l);
+            }
+        }
+        ListNode dummyHead = new ListNode();
+        ListNode cur = dummyHead;
+        while(!q.isEmpty()) {
+            ListNode min = q.poll();
+            cur.next = min;
+            cur = cur.next;
+            if(min.next != null) {
+                q.offer(min.next);
+            }
+        }
+        return dummyHead.next;
+    }*/
+
+    
   public static void main(String[] args) {
     System.out.println(1 + (2 -0) >> 1);
     System.out.println(1 + ((2 -0) >> 1));
