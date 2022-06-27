@@ -1,4 +1,6 @@
-class Solution {
+package redo;
+
+class 最后一块石头的重量_1046 {
     public int lastStoneWeight(int[] stones) {
         MaxHeap maxHeap = new MaxHeap(stones);
         while(maxHeap.size() >= 2) {
