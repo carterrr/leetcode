@@ -1,4 +1,4 @@
-package redo;
+package redo.mistakescollection;
 
 public class 实现strstr_28 {
   public static void main(String[] args) {
